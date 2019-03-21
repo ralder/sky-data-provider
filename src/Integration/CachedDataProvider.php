@@ -18,9 +18,8 @@ class CachedDataProvider implements DataProviderInterface
     private $provider;
 
     /**
-     * @param string $host
-     * @param string $user
-     * @param string $password
+     * @param DataProviderInterface  $provider
+     * @param CacheItemPoolInterface $cache
      */
     public function __construct(DataProviderInterface $provider, CacheItemPoolInterface $cache)
     {
